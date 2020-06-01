@@ -1,0 +1,95 @@
+body {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.country {
+    padding: 10px;
+    color: blue;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+@media all and (min-width: 500px) {
+    .countries {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .country {
+        margin-bottom: 0;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .countries {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .countries {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+.country-code {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #333333;
+    padding: 3px 5px;
+    margin-left: 10px;
+    font-size: 0.75em;
+    line-height: 1em;
+}
+
+
+.pagination {
+    margin: 20px 0;
+    padding: 10px 0;
+    border-top: 1px solid #ededed;
+}
+
+.pagination__number {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    color: #fff;
+    background: #333;
+    text-decoration: none;
+    display: inline-flex;
+    align-content: center;
+    line-height: 30px;
+    justify-content: center;
+    margin: 0 10px 10px 0;
+}
+
+.pagination__number--active {
+    color: #333;
+    background: #ededed;
+}
+
+.red {
+    background-color: darkred;
+}
+
+.blue {
+    background-color: darkblue;
+}
+
+.yellow {
+    background-color: rgba(231, 235, 73, 0.8);
+    color: #333333;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.black {
+    background-color: black;
+}
+
+.green {
+    background-color: darkgreen;
+}
